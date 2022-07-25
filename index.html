@@ -4,26 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Panda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled">Disabled</a>
+    <header class="container">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link" href="#">Shoes</a>
+                  <a class="nav-link" href="#">Backpack</a>
+                  <a class="nav-link" href="#">Subcribe</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </nav>
+          </nav>
+          <!-- slider start -->
+          <section class="py-2">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active border rounded p-5" data-bs-interval="10000">
+                    <div class="row">
+                        <div class="col-lg-7 d-flex align-items-center">
+                            <div>
+                            <h1>Cool Dude Headphone</h1>
+                            <p>This is the best headphone in the world for peaple who just want to waste time in front of funky world.
+                            </p>
+                            <h1>$420</h1>
+                            <a href="#" class="btn text-light px-4 py-2 border-0" role="button" data-bs-toggle="button">Buy Now</a>
+                        </div>
+                            </div>
+                        <div class="col-lg-5">
+                            <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item active border rounded p-5" data-bs-interval="10000">
+                    <div class="row">
+                        <div class="col-lg-7 d-flex align-items-center">
+                            <div>
+                            <h1>Mega LCD TV for Sports</h1>
+                            <p>
+                                This is the best headphone in the world for peaple who just want to waste time in front of funky world.
+                            </p>
+                            <h1>$1200</h1>
+                            <a href="#" class="btn text-light px-4 py-2 border-0" role="button" data-bs-toggle="button">Buy Now</a>
+                        </div>
+                            </div>
+                        <div class="col-lg-5">
+                            <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item active border rounded p-5" data-bs-interval="10000">
+                    <div class="row">
+                        <div class="col-lg-7 d-flex align-items-center">
+                            <div>
+                            <h1>
+                                X-box for your living room
+                            </h1>
+                            <p>
+                                This is the best headphone in the world for peaple who just want to waste time in front of funky world.
+                            </p>
+                            <h1>$600</h1>
+                            <a href="#" class="btn text-light px-4 py-2 border-0" role="button" data-bs-toggle="button">Buy Now</a>
+                        </div>
+                            </div>
+                        <div class="col-lg-5">
+                            <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </section>
+    </header>
+    <main>
+        <!-- catagories start -->
+        <section>
+            <div class="container my-5">
+                <h1 class="ps-5">Catergories</h1>
+                <div class="categories-container d-flex justify-content-center my-4">
+                    <div class="row g-5">
+                        <!-- single category -->
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="p-3 border bg1 text-light d-flex align-items-center justify-content-around rounded-3">
+                            <h1>Watch</h1>
+                            <img class="category-img" src="images/categories/watch.png" alt="">
+                        </div>
+                      </div>
+                      <!-- single category -->
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="p-3 border bg2 text-light d-flex align-items-center justify-content-around rounded-3">
+                            <h1>Shoes</h1>
+                            <img class="category-img" src="images/categories/shoes.png" alt="">
+                        </div>
+                      </div>
+                      <!-- single category -->
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="p-3 border bg3 text-light d-flex align-items-center justify-content-around rounded-3">
+                            <h1>Bags</h1>
+                            <img class="category-img" src="images/categories/bag.png" alt="">
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+        <!-- catagories end -->
+    </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>

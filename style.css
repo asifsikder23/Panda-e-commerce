@@ -1,0 +1,24 @@
+.carousel-item{
+    background-color: #FEEAE9;
+}
+.btn{
+    background-image: linear-gradient(#FF58A8 , #FF136F);
+    color: white;
+}
+.bg1{
+    background-image: linear-gradient(#FF9C35, #FFD019);
+}
+.bg2{
+    background-image: linear-gradient(#FF589E, #FF136F);
+}
+.bg3{
+    background-image: linear-gradient(#4289FF, #3F07F8);
+}
+.border{
+    width: 100%;
+    height: 90%;
+}
+.category-img{
+    width: 40%;
+    padding: 10px;
+}
