@@ -12,8 +12,8 @@ for(const shopping of backpacks){
 const cards = document.getElementsByClassName('card');
 for(const card of cards){
     card.style.backgroundColor = '#F0F8FF';
-    card.style.padding = '20px'
-    card.style.borderRadius = '50px'
+    card.style.padding = '20px';
+    card.style.borderRadius = '50px';
 }
 // subscribe section
 document.getElementById('subscribe').addEventListener('dblclick', function () {
@@ -73,4 +73,18 @@ function Change5() {
 }
 function Change6() {
     document.getElementById('backpack3').src ='images/bags/bag-3.png'
+}
+
+// add cart
+const shoeItem = document.getElementsByClassName('shoe_cart_btn');
+for(const shoe_cart_btn of shoeItem ){
+    shoe_cart_btn.addEventListener('click', function (event) {
+        event.target.parentNode.removeChild(event.target)
+    })
+}
+const bagItem = document.getElementsByClassName('bag_cart_btn');
+for(const bag_cart_btn of bagItem ){
+    bag_cart_btn.addEventListener('click', function (event) {
+        event.target.parentNode.removeChild(event.target)
+    })
 }
